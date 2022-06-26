@@ -1,0 +1,8 @@
+.cards-team{
+    width: 350px;
+}
+@media (min-width: 576px){
+    .cards-team{
+        width: 50%;
+    }
+}

@@ -1,0 +1,180 @@
+.main .page-title .slider-st1 .overlay {
+  background-image: url(assets/images/page/back_home.jpg);
+  /* background-size: 100%; */
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.main .page-title {
+  height: max-content;
+  min-height: fit-content;
+  /* margin-top: -180px; */
+}
+
+.main .page-title .slider-st1, .main .page-title .slider-st2, .main .page-title .slider-st3 {
+  position: relative;
+  height: 100vh !important;
+}
+
+.bordertext {
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(65, 65, 65);
+}
+
+.tf-section {
+  padding-top: 0px;
+  padding-bottom: 15px;
+}
+
+.pie_banner {
+  margin-top: -25px;
+  margin-bottom: 10px;
+  padding-top: -25px;
+}
+
+.header__logo {
+  width: 180px;
+  margin-top: -10px;
+}
+
+
+
+.roadmap::before {
+  width: 6px !important;
+  height: 170% !important;
+  background: #fe1393 !important;
+  position: absolute !important;
+  top: 6% !important;
+  left: 49.8% !important;
+  content: "";
+  z-index: 1 !important;
+}
+
+
+
+
+
+.glitch {
+  position: relative;
+  color: yellow;
+  mix-blend-mode: lighten;
+}
+
+.glitch:before,
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: black;
+  clip: rect(0, 0, 0, 0);
+}
+
+.glitch:before {
+  left: -4px;
+  text-shadow: 6px 0 #ff00ff;
+}
+
+.glitch:hover:before {
+  text-shadow: 4px 0 #ff00ff;
+  animation: glitch-anim-1 0.4s infinite ease-in-out alternate-reverse;
+}
+
+.glitch:after {
+  left: 4px;
+  text-shadow: -3px 0 #00ffc8;
+}
+
+.glitch:hover:after {
+  text-shadow: -5px 0 #00ffc8;
+  animation: glitch-anim-2 0.3s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+  0% {
+    clip: rect(30px, 9999px, 10px, 0);
+  }
+
+  25% {
+    clip: rect(15px, 9999px, 100px, 0);
+  }
+
+  50% {
+    clip: rect(50px, 9999px, 105px, 0);
+  }
+
+  75% {
+    clip: rect(2px, 9999px, 80px, 0);
+  }
+
+  100% {
+    clip: rect(90px, 9999px, 100px, 0);
+  }
+}
+
+@keyframes glitch-anim-2 {
+  0% {
+    top: -1px;
+    left: 50px;
+    clip: rect(65px, 9999px, 119px, 0);
+  }
+
+  25% {
+    top: -10px;
+    left: 1px;
+    clip: rect(79px, 9999px, 19px, 0);
+  }
+
+  50% {
+    top: -7px;
+    left: 20px;
+    clip: rect(65px, 9999px, 11px, 0);
+  }
+
+  75% {
+    top: 10px;
+    right: 20px;
+    left: -50px;
+    clip: rect(95px, 9999px, 53px, 0);
+  }
+
+  100% {
+    top: -5px;
+    left: -7px;
+    clip: rect(31px, 9999px, 149px, 0);
+  }
+}
+
+
+
+.roboto {
+  font-family: 'Audiowide', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.roadmap_mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .roadmap_desk {
+    display: none;
+  }
+
+  .roadmap_mobile {
+    display: block;
+  }
+  .page-title .overlay{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+  }
+
+  /* .main .page-title {
+    display: none ;
+  } */
+}
