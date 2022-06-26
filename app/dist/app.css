@@ -1021,6 +1021,7 @@
   height: 100%;
   background: url("./../../assets/images/backgroup/bg-1.jpg") center center no-repeat;
   background-size: cover;
+  opacity: .3;
 }
 
 .main .page-title .slider-st2 {
