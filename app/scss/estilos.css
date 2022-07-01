@@ -1,6 +1,11 @@
 .cards-team{
     width: 350px;
 }
+@media (max-width: 578px){
+    .contenido-title{
+        margin-top: 5% !important;
+    }
+}
 @media (max-width: 1200px){
     .contenido-title{
         margin-top: 15% !important;
