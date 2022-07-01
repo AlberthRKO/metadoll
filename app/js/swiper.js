@@ -1,6 +1,6 @@
 var swiper = new Swiper(".slider-main", {
   slidesPerView: 1,
-  loop: false,
+  loop: true,
   spaceBetween: 0,
   navigation: {
     nextEl: ".btn-next-main",
@@ -10,6 +10,7 @@ var swiper = new Swiper(".slider-main", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: true,
   breakpoints: {
     1280: {
       slidesPerView: 1,

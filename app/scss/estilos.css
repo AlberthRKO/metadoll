@@ -2,8 +2,18 @@
     width: 350px;
 }
 @media (max-width: 578px){
+    .page-title{
+        min-height: 100vh !important;
+    }
     .contenido-title{
         margin-top: 5% !important;
+    }
+    .subtitulo{
+        font-size: 16px;
+        color:white !important;
+    }
+    .titulo2{
+        font-size: 20px;
     }
 }
 @media (max-width: 1200px){
@@ -14,5 +24,19 @@
 @media (min-width: 576px){
     .cards-team{
         width: 50%;
+    }
+    
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+    .subtitle{
+        display: none;
+    }
+    .page-title .title{
+        font-size: 25px;
+        text-align: center !important;
+    }
+    .imagensita{
+        width: 30%;
     }
 }
