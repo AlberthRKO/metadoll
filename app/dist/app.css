@@ -210,6 +210,7 @@
   padding: 9px 32px;
   height: 48px;
   border: none;
+  
 }
 
 .tf-button .boder-fade {
@@ -320,7 +321,25 @@
   height: 64px;
   border: none;
 }
+.tf-button-st3 {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  font-family: "Chakra Petch", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 32px;
+  height: 64px;
+  border: none;
+}
 
+.tf-button-st3 .boder-fade,
 .tf-button-st2 .boder-fade {
   position: absolute;
   transition: all 0.1s;
@@ -332,10 +351,12 @@
   top: 0;
 }
 
+.tf-button-st3 .effect ,
 .tf-button-st2 .effect {
   display: block;
 }
 
+.tf-button-st3 .effect::before, .tf-button-st3 .effect::after,
 .tf-button-st2 .effect::before, .tf-button-st2 .effect::after {
   content: "";
   width: 2px;
@@ -345,6 +366,7 @@
   background: #fff;
 }
 
+.tf-button-st3::before, .tf-button-st3::after ,
 .tf-button-st2::before, .tf-button-st2::after {
   content: "";
   width: 0;
@@ -354,19 +376,23 @@
   background: #fff;
 }
 
+.tf-button-st3:hover,
 .tf-button-st2:hover {
   color: #fff;
   background: transparent;
 }
 
+.tf-button-st3:hover::before, .tf-button-st3:hover::after,
 .tf-button-st2:hover::before, .tf-button-st2:hover::after {
   width: 100%;
 }
 
+.tf-button-st3:hover .effect::before, .tf-button-st3:hover .effect::after,
 .tf-button-st2:hover .effect::before, .tf-button-st2:hover .effect::after {
   height: 100%;
 }
 
+.tf-button-st3.btn-effect::before,
 .tf-button-st2.btn-effect::before {
   left: 50%;
   top: 0;
@@ -374,6 +400,7 @@
   z-index: 1;
 }
 
+.tf-button-st3.btn-effect::after,
 .tf-button-st2.btn-effect::after {
   left: 50%;
   bottom: 0;
@@ -381,22 +408,26 @@
   z-index: 1;
 }
 
+.tf-button-st3.btn-effect .effect::before,
 .tf-button-st2.btn-effect .effect::before {
   left: 0;
   top: 50%;
   transition-duration: 0.3s;
 }
 
+.tf-button-st3.btn-effect .effect::after,
 .tf-button-st2.btn-effect .effect::after {
   right: 0;
   top: 50%;
   transition-duration: 0.3s;
 }
 
+.tf-button-st3.btn-effect:hover::after, .tf-button-st3.btn-effect:hover::before,
 .tf-button-st2.btn-effect:hover::after, .tf-button-st2.btn-effect:hover::before {
   left: 0;
 }
 
+.tf-button-st3.btn-effect:hover .effect::after, .tf-button-st3.btn-effect:hover .effect::before,
 .tf-button-st2.btn-effect:hover .effect::after, .tf-button-st2.btn-effect:hover .effect::before {
   top: 0;
 }
@@ -2430,6 +2461,11 @@
   min-height: 310px;
   z-index: -2;
   padding: 10px 10px 0px 10px;
+  border-radius: 25px;
+}
+.team-box .imagenDentro {
+  min-height: 310px;
+  /* z-index: 157; */
 }
 
 .team-box .image img {
